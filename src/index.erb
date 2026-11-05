@@ -15,36 +15,7 @@ layout: default
 
 <section>
   <h2><span class="hl">How I can help</span></h2>
-  <div class="audiences">
-    <% site.data.services.each do |audience| %>
-      <div>
-        <h3 class="audience-title"><span class="hl"><%= audience.title %></span></h3>
-        <div class="cards">
-          <% audience.items.each do |service| %>
-            <article class="card">
-              <h4><%= service.title %></h4>
-              <p><%= service.body %></p>
-            </article>
-          <% end %>
-        </div>
-      </div>
-    <% end %>
-  </div>
-</section>
-
-<section>
-  <h2><span class="hl">Ways to work together</span></h2>
-  <div class="cards cards-row">
-    <% site.data.offers.each do |offer| %>
-      <article class="card">
-        <h4><%= offer.title %></h4>
-        <p><%= offer.body %></p>
-        <% if offer.from %>
-          <p class="price">From <%= offer.from %></p>
-        <% end %>
-      </article>
-    <% end %>
-  </div>
+  <%= render "audience_cards", groups: site.data.services %>
 </section>
 
 <section>

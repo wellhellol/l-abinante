@@ -9,11 +9,6 @@ selected:
     body: >-
       Built and owned integrations with Stripe, Airtable, and AWS Cognito, plus AI features and an internal Claude plugin marketplace.
 
-  - company: YearOne
-    years: 2023 to 2024
-    body: >-
-      Founding backend engineer at an engineering-metrics startup. Built the integrations that pulled in data from enterprise APIs, and the Ruby libraries behind them.
-
   - company: Stripe
     years: 2020 to 2022
     body: >-

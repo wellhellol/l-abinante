@@ -1,29 +1,29 @@
 - title: For tech teams
   items:
-    - title: Stripe Billing
+    - title: Vibe code rescue
+      price: from $2,500
       body: >-
-        Subscriptions, invoices, proration, usage-based pricing, and webhooks. I'm especially good at the "why doesn't Stripe match our database" kind of bug, and at setting up new integrations so revenue reporting works from day one.
-    - title: Integrations that survive bad days
+        Built fast with AI tools? I check security, data handling, and tests for a fixed price, then quote the fixes.
+    - title: Stripe billing checkup
+      price: from $4,500
       body: >-
-        Payments, CRMs, booking systems, and auth providers, built to handle retries, duplicate webhooks, and bad data. I am still petrified of data loss, and I build like it.
-    - title: AI features in Rails
+        I helped build Stripe's billing APIs. I'll find out why Stripe and your database disagree, and fix it for good.
+    - title: Fractional engineer
+      price: from $3,500 a month
       body: >-
-        Adding Claude and other model APIs to real product workflows, plus internal tooling that helps engineers and non-technical teams get more done.
-    - title: Senior help on older codebases
-      body: >-
-        Upgrades, legacy refactors, and the code nobody wants to touch. I've spent most of my career inside large, old Rails apps, and I genuinely like them.
+        Twenty hours a month on your Rails team: tickets, code review, upgrades, AI features, and mentoring.
 
 - title: For small businesses
   items:
-    - title: Booking and payments
+    - title: Automate your busywork
+      price: from $1,000
       body: >-
-        Online booking and payments that flow into the rest of your tools, so nobody spends their evening copying names between tabs.
-    - title: Getting your tools to talk
+        Bookings, email, calendars, and spreadsheets that update each other, so nobody copies details between tabs.
+    - title: Online booking and payments
+      price: from $2,500
       body: >-
-        Your booking system, email marketing, calendar, and spreadsheets, passing information to each other automatically.
-    - title: Small tools built for you
+        Booking and checkout set up so money and customer details land in the right place.
+    - title: Monthly care plan
+      price: $500 a month
       body: >-
-        A little app or automation shaped around how your business actually works, like a Slack assistant that helps your staff run the day.
-    - title: Fixing what broke
-      body: >-
-        Something your last developer built that stopped working? I'll figure out why, fix it, and write down how it works.
+        A few hours a month for fixes, small changes, and keeping things running, including whatever your last developer left behind.

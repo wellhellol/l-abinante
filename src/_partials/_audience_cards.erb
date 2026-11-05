@@ -1,0 +1,18 @@
+<div class="audiences">
+  <% groups.each do |audience| %>
+    <div>
+      <h3 class="audience-title"><span class="hl"><%= audience.title %></span></h3>
+      <div class="cards">
+        <% audience.items.each do |item| %>
+          <article class="card">
+            <h4><%= item.title %></h4>
+            <% if item.price %>
+              <p class="price"><%= item.price %></p>
+            <% end %>
+            <p><%= item.body %></p>
+          </article>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
