@@ -1,0 +1,44 @@
+---
+layout: default
+title: Pricing
+noindex: true
+---
+<% meta = site.metadata %>
+
+<section class="pricing-intro">
+  <h1><span class="hl">Pricing</span></h1>
+  <p class="lede">Here's what each package includes and roughly what it costs. Every project is a little different, so these are starting points. We'll agree on the exact scope and price before any work begins.</p>
+</section>
+
+<% site.data.services.each do |audience| %>
+  <section>
+    <h2><span class="hl"><%= audience.title %></span></h2>
+    <div class="cards cards-row">
+      <% audience.items.each do |item| %>
+        <article class="card package">
+          <h4><%= item.title %></h4>
+          <p class="package-price"><%= item.price %></p>
+          <p class="soft"><%= item.timeline %></p>
+          <ul>
+            <% item.includes.each do |line| %>
+              <li><%= line %></li>
+            <% end %>
+          </ul>
+          <% if item.note %>
+            <p class="soft"><%= item.note %></p>
+          <% end %>
+        </article>
+      <% end %>
+    </div>
+  </section>
+<% end %>
+
+<section>
+  <h2><span class="hl">Good to know</span></h2>
+  <ul class="terms">
+    <% site.data.pricing_terms.each do |term| %>
+      <li><%= term %></li>
+    <% end %>
+  </ul>
+  <a class="cta" href="mailto:<%= meta.email %>"><%= meta.cta %></a>
+</section>

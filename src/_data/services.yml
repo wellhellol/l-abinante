@@ -1,29 +1,74 @@
+# `title` and `body` show on the home page.
+# `price`, `timeline`, `includes`, and `note` show only on the pricing page.
+
 - title: For tech teams
   items:
     - title: Vibe code rescue
-      price: from $2,500
       body: >-
         Built fast with AI tools? I check security, data handling, and tests for a fixed price, then quote the fixes.
+      price: from $2,500
+      timeline: About a week for the health check
+      includes:
+        - A review of security, logins, and how your data is stored
+        - A look at tests, deploys, and error tracking
+        - A written report ranking every issue by risk
+        - A fixed quote for the fixes, which you're free to take elsewhere
+
     - title: Stripe billing checkup
-      price: from $4,500
       body: >-
         I helped build Stripe's billing APIs. I'll find out why Stripe and your database disagree, and fix it for good.
+      price: from $4,500
+      timeline: Two to three weeks
+      includes:
+        - Comparing Stripe with your database to find where they drift apart
+        - Reviewing webhooks for retries, duplicates, and missed events
+        - Fixing what I find, up to an agreed scope
+        - Notes your team can use to keep billing healthy
+
     - title: Fractional engineer
-      price: from $3,500 a month
       body: >-
         Twenty hours a month on your Rails team: tickets, code review, upgrades, AI features, and mentoring.
+      price: from $3,500 a month
+      timeline: Month to month, with a month's notice
+      includes:
+        - 20 hours a month, with more available by arrangement
+        - Joining your Slack, standups, and code review
+        - Feature work, Rails upgrades, AI features, and mentoring
+        - A short written update at the end of each month
 
 - title: For small businesses
   items:
     - title: Automate your busywork
-      price: from $1,000
       body: >-
         Bookings, email, calendars, and spreadsheets that update each other, so nobody copies details between tabs.
+      price: from $1,000
+      timeline: One to three weeks
+      includes:
+        - A chat to map how information moves through your business
+        - Connecting tools like your booking system, email list, calendar, and spreadsheets
+        - An alert if a connection ever stops working
+        - A plain-language guide to what was set up
+      note: $1,000 covers one connection. Bigger setups are quoted up front.
+
     - title: Online booking and payments
-      price: from $2,500
       body: >-
         Booking and checkout set up so money and customer details land in the right place.
+      price: from $2,500
+      timeline: Two to four weeks
+      includes:
+        - Setting up or fixing online booking
+        - Stripe checkout, deposits, or gift cards
+        - Customer details flowing into your email list or CRM
+        - Testing with real bookings before launch
+
     - title: Monthly care plan
-      price: $500 a month
       body: >-
         A few hours a month for fixes, small changes, and keeping things running, including whatever your last developer left behind.
+      price: $500 a month
+      timeline: Month to month
+      includes:
+        - Up to 3 hours of fixes and small changes
+        - Keeping your software and connections up to date
+        - A reply within one business day when something breaks
+      note: Unused hours don't roll over.
+

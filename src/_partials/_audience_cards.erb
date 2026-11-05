@@ -6,9 +6,6 @@
         <% audience.items.each do |item| %>
           <article class="card">
             <h4><%= item.title %></h4>
-            <% if item.price %>
-              <p class="price"><%= item.price %></p>
-            <% end %>
             <p><%= item.body %></p>
           </article>
         <% end %>

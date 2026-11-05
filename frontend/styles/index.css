@@ -276,3 +276,40 @@ blockquote {
     gap: 0.25rem;
   }
 }
+
+/* Pricing page */
+
+.pricing-intro {
+  padding-top: 5rem;
+}
+
+.pricing-intro h1 {
+  font-size: clamp(2.25rem, 5vw, 3.4rem);
+  margin-bottom: 1.5rem;
+}
+
+.pricing-intro .lede {
+  max-width: 40rem;
+}
+
+.package ul,
+.terms {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}
+
+.package li,
+.terms li {
+  margin-bottom: 0.4rem;
+}
+
+.package-price {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.terms {
+  max-width: 40rem;
+  margin-bottom: 2rem;
+}
