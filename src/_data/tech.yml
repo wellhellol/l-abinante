@@ -1,0 +1,74 @@
+headline: I build things from scratch, and I fix the things that broke along the way.
+intro: >-
+  I've been building Rails apps since 2013. I helped build Stripe's billing APIs, led GitHub Projects, and built integrations, AI features, and permissions from scratch at Recast. I join a few teams at a time, both to build new things and to shore up the parts that have gotten fragile.
+
+packages:
+    - title: Stripe billing, built or fixed
+      body: >-
+        I helped build Stripe's billing APIs. I'll set up subscriptions and usage-based pricing from scratch, or find out why Stripe and your database disagree.
+      price: from $4,500
+      timeline: Two to four weeks
+      includes:
+        - New subscription, invoicing, or usage-based billing, built so revenue reporting works from day one
+        - Webhooks that survive retries, duplicates, and missed events
+        - Comparing Stripe with your database to find and fix where they drift
+        - Notes your team can use to keep billing healthy
+
+    - title: New features and integrations
+      body: >-
+        A defined build, like a new integration, an internal tool, or an AI feature, scoped and quoted up front.
+      price: from $6,000
+      timeline: Three to six weeks
+      includes:
+        - Integrations with payments, CRMs, booking systems, and auth providers
+        - AI features using Claude and other model APIs, with the checks they need in production
+        - Tests, docs, and monitoring from the start
+        - A walkthrough so your team can own it afterwards
+
+    - title: Fractional engineer
+      body: >-
+        Twenty hours a month on your Rails team, shipping features, reviewing code, and mentoring.
+      price: from $3,500 a month
+      timeline: Month to month, with a month's notice
+      includes:
+        - 20 hours a month, with more available by arrangement
+        - Joining your Slack, standups, and code review
+        - New features, AI work, and mentoring
+        - A short written update at the end of each month
+
+also:
+  - title: Vibe code rescue
+    price: from $2,500
+    body: >-
+      Built fast with AI tools? I check security, data handling, and tests for a fixed price, then quote the fixes.
+  - title: Legacy code audit
+    price: from $4,000
+    body: >-
+      About two weeks of digging, then a written report: what's risky, what's fine, and what to fix first. Useful before fundraising, an acquisition, or a big rebuild.
+  - title: Sign-in and permissions
+    price: from $6,000
+    body: >-
+      Setting up sign-in with AWS Cognito and fine-grained permissions with Amazon Verified Permissions, or untangling the ones you already have.
+
+proof:
+  - title: Stripe
+    body: >-
+      Built and hardened the Invoicing and Billing APIs businesses use for subscriptions and invoices, and split legacy billing code into separate services. Also rebuilt the code review training and the two-week engineering onboarding.
+  - title: GitHub
+    body: >-
+      Technical lead for GitHub Projects in the github.com Rails monolith. Audited the Projects API permissions with the security team and fixed the gaps.
+  - title: Recast
+    body: >-
+      Built and owned integrations with Stripe and Airtable, plus sign-in with AWS Cognito and fine-grained permissions with Amazon Verified Permissions. Also built AI features and an internal Claude plugin marketplace.
+
+steps:
+  - A free 30-minute call about what's going on.
+  - A short written proposal with the scope, timeline, and a fixed price or monthly rate.
+  - The work itself, with a written update every week.
+  - A handoff your team can use, with docs, tests, and a walkthrough.
+
+headings:
+  packages: Engagements
+  also: More ways I can help
+  proof: Where I've done this before
+  steps: How an engagement runs

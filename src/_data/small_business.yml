@@ -1,0 +1,45 @@
+headline: Less copying and pasting. More time for your customers.
+intro: >-
+  I'm a software engineer in Portland. Since summer I've been building the behind-the-scenes systems for Ebb & Ember Floating Saunas, a local wellness business: bookings that flow into their email marketing, event sign-ups, and alerts when anything breaks. I can build the same kind of thing for you.
+
+also:
+  - title: Moving your customer list
+    price: from $2,000
+    body: >-
+      Switching email or CRM tools? I move your customers and their purchase history over, and carry every unsubscribe with them, so nobody who opted out hears from you again.
+  - title: Forms and event sign-ups
+    price: from $1,500
+    body: >-
+      RSVPs and feedback forms that close themselves at a headcount or a date, add people to your email list, and let your team know in Slack.
+
+proof:
+  - title: Every customer on the mailing list
+    body: >-
+      Everyone who books or buys is added to their email marketing automatically, tagged by membership and purchase history, so birthday, loyalty, and come-back-soon emails send themselves.
+  - title: A safe switch to a new email tool
+    body: >-
+      Moved their whole customer list and booking history to a new email platform, carrying over every unsubscribe so the first email didn't reach anyone who had opted out.
+  - title: Event RSVPs
+    body: >-
+      A live headcount and guest list for events, with a Slack alert as an event fills up.
+  - title: Today's bookings at a glance
+    body: >-
+      A simple staff page showing who's booked and when, which their booking system couldn't show on its own.
+  - title: Alerts when something breaks
+    body: >-
+      If a connection ever fails, the team hears about it in Slack before a customer notices.
+
+tools: >-
+  Tools I've connected so far include Periode, ActiveCampaign, SendGrid, Stripe, Slack, Google Workspace, and Airtable. If yours isn't on the list, I'll check whether it can be connected before we agree on anything.
+
+steps:
+  - A free 30-minute chat about what's eating your time.
+  - A short written plan with a fixed price, in plain language.
+  - I build it and test it with your real bookings and customers.
+  - You get a simple guide to what was set up, and I'm reachable if anything breaks.
+
+headings:
+  packages: Popular projects
+  also: Bigger builds
+  proof: What I built for Ebb & Ember
+  steps: How we'd work together

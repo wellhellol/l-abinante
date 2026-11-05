@@ -1,0 +1,84 @@
+---
+layout: default
+---
+<%
+  # Each audience page names its data file and its group in services.yml
+  meta = site.metadata
+  page = site.data[data.audience]
+  packages = page.packages || site.data.services[data.service_group].items
+%>
+
+<section class="hero">
+  <h1><span class="hl"><%= page.headline %></span></h1>
+  <div>
+    <p class="lede"><%= page.intro %></p>
+    <a class="cta" href="mailto:<%= meta.email %>"><%= meta.cta %></a>
+  </div>
+</section>
+
+<section>
+  <h2><span class="hl"><%= page.headings.packages %></span></h2>
+  <div class="cards cards-row">
+    <% packages.each do |item| %>
+      <article class="card package">
+        <h4><%= item.title %></h4>
+        <p class="package-price"><%= item.price %></p>
+        <p class="soft"><%= item.timeline %></p>
+        <p><%= item.body %></p>
+        <ul>
+          <% item.includes.each do |line| %>
+            <li><%= line %></li>
+          <% end %>
+        </ul>
+        <% if item.note %>
+          <p class="soft"><%= item.note %></p>
+        <% end %>
+      </article>
+    <% end %>
+  </div>
+</section>
+
+<% if page.also %>
+  <section>
+    <h2><span class="hl"><%= page.headings.also %></span></h2>
+    <div class="cards cards-row">
+      <% page.also.each do |item| %>
+        <article class="card package">
+          <h4><%= item.title %></h4>
+          <p class="package-price"><%= item.price %></p>
+          <p><%= item.body %></p>
+        </article>
+      <% end %>
+    </div>
+  </section>
+<% end %>
+
+<section>
+  <h2><span class="hl"><%= page.headings.proof %></span></h2>
+  <div class="jobs">
+    <% page.proof.each do |item| %>
+      <div class="job">
+        <h4><%= item.title %></h4>
+        <p><%= item.body %></p>
+      </div>
+    <% end %>
+  </div>
+  <% if page.tools %>
+    <p class="soft tools"><%= page.tools %></p>
+  <% end %>
+</section>
+
+<section>
+  <h2><span class="hl"><%= page.headings.steps %></span></h2>
+  <ol class="steps">
+    <% page.steps.each do |step| %>
+      <li><%= step %></li>
+    <% end %>
+  </ol>
+  <ul class="terms">
+    <% site.data.pricing_terms.each do |term| %>
+      <li><%= term %></li>
+    <% end %>
+  </ul>
+  <a class="cta" href="mailto:<%= meta.email %>"><%= meta.cta %></a>
+</section>

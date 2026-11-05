@@ -313,3 +313,26 @@ blockquote {
   max-width: 40rem;
   margin-bottom: 2rem;
 }
+
+/* Audience pages */
+
+.steps {
+  max-width: 40rem;
+  margin: 0 0 2rem;
+  padding-left: 1.5rem;
+  font-size: 1.15rem;
+}
+
+.steps li {
+  margin-bottom: 0.6rem;
+  padding-left: 0.25rem;
+}
+
+.steps li::marker {
+  font-weight: 700;
+}
+
+.tools {
+  max-width: 40rem;
+  margin-top: 1.5rem;
+}
