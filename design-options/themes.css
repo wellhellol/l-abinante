@@ -1,0 +1,227 @@
+/* J1 Sage & butter: a soft green board, deep green ink,
+   and a classic yellow highlighter. Calm and friendly. */
+.theme-sage {
+  --board: #e9eee6;
+  --paper: #ffffff;
+  --ink: #26332c;
+  --soft: #5b6a61;
+  --line: #b9c6bd;
+  --hl: #ffe27a;
+  --on-hl: #26332c;
+  --tape-1: #ffe27a;
+  --tape-2: #c9dcc3;
+  --tape-opacity: 0.9;
+  --link: #6d9b7d;
+  --card-border: 1px solid #cfd8d1;
+  --cta-bg: #26332c;
+  --cta-ink: #ffffff;
+}
+
+/* J2 Cornflower: a pale blue-grey board, navy ink, soft blue highlights,
+   with sunny yellow tape for a little play. Crisp and modern. */
+.theme-cornflower {
+  --board: #eaeef5;
+  --paper: #ffffff;
+  --ink: #1f2a44;
+  --soft: #5a6580;
+  --line: #c3cbdb;
+  --hl: #c4d4fb;
+  --on-hl: #1f2a44;
+  --tape-1: #ffd95e;
+  --tape-2: #a9c0f5;
+  --tape-opacity: 0.9;
+  --link: #6f8fdc;
+  --card-border: 1px solid #d3d9e6;
+  --cta-bg: #3555a8;
+  --cta-ink: #ffffff;
+}
+
+/* J3 Teal & lime: an almost-white board, deep teal ink, and a zesty
+   lime highlighter. The most playful of the three. */
+.theme-lime {
+  --board: #f4f7f5;
+  --paper: #ffffff;
+  --ink: #17403d;
+  --soft: #4f6e6a;
+  --line: #b8cfcb;
+  --hl: #e4f27a;
+  --on-hl: #17403d;
+  --tape-1: #e4f27a;
+  --tape-2: #8fd6c9;
+  --tape-opacity: 0.85;
+  --link: #2f8f82;
+  --card-border: 1px solid #cfdcd9;
+  --cta-bg: #17403d;
+  --cta-ink: #ffffff;
+}
+
+.theme-lime .cta:hover,
+.theme-sage .cta:hover,
+.theme-cornflower .cta:hover {
+  background: var(--hl);
+  color: var(--on-hl);
+}
+
+/* J3 variants: the same lime board, with the teal swapped out */
+
+/* K1 Charcoal */
+.theme-lime.ink-charcoal {
+  --ink: #2a2d2b;
+  --soft: #626764;
+  --line: #cdd1ce;
+  --on-hl: #2a2d2b;
+  --tape-2: #d6dad5;
+  --link: #6b726d;
+  --card-border: 1px solid #dadddb;
+  --cta-bg: #2a2d2b;
+}
+
+/* K2 Forest */
+.theme-lime.ink-forest {
+  --ink: #1f3d26;
+  --soft: #56705b;
+  --line: #bfd1c2;
+  --on-hl: #1f3d26;
+  --tape-2: #b5dcae;
+  --link: #3f8a4f;
+  --card-border: 1px solid #d2dfd4;
+  --cta-bg: #1f3d26;
+}
+
+/* K3 Navy */
+.theme-lime.ink-navy {
+  --ink: #1d2c4a;
+  --soft: #56637e;
+  --line: #c3cbdb;
+  --on-hl: #1d2c4a;
+  --tape-2: #b3c7f2;
+  --link: #3d63b8;
+  --card-border: 1px solid #d3d9e6;
+  --cta-bg: #1d2c4a;
+}
+
+/* Charcoal variations of K1 */
+
+/* L1 Warm charcoal: a touch of brown */
+.theme-lime.ink-warm {
+  --ink: #34302b;
+  --soft: #6b655e;
+  --line: #d6d1ca;
+  --on-hl: #34302b;
+  --tape-2: #e0dbd3;
+  --link: #7a736b;
+  --card-border: 1px solid #e0dcd6;
+  --cta-bg: #34302b;
+}
+
+/* L2 Soft charcoal: lighter and gentler */
+.theme-lime.ink-soft {
+  --ink: #45484a;
+  --soft: #74787a;
+  --line: #d8dbdc;
+  --on-hl: #34373a;
+  --tape-2: #dfe1df;
+  --link: #8a8e90;
+  --card-border: 1px solid #e2e4e4;
+  --cta-bg: #45484a;
+}
+
+/* L3 Cool charcoal: a slight grey-blue undertone */
+.theme-lime.ink-cool {
+  --ink: #2c3033;
+  --soft: #63696e;
+  --line: #cfd4d8;
+  --on-hl: #2c3033;
+  --tape-2: #d5dade;
+  --link: #6c757c;
+  --card-border: 1px solid #dadee1;
+  --cta-bg: #2c3033;
+}
+
+/* Lower-contrast charcoal: lighter text, an off-white card, a softer board,
+   and a lime button instead of a dark one. All text still passes WCAG AA. */
+.theme-lime.lowc {
+  --board: #eef1ef;
+  --card-bg: #fcfcfb;
+  --tape-2: #e3e6e3;
+  --line: #dde1de;
+  --card-border: 1px solid #e6e9e6;
+  --cta-bg: var(--hl);
+}
+
+.theme-lime.lowc .cta {
+  color: var(--ink);
+}
+
+.theme-lime.lowc .cta:hover {
+  background: var(--tape-2);
+}
+
+/* M1: about 7 to 1 */
+.theme-lime.ink-m1 {
+  --ink: #55595b;
+  --soft: #6b6f72;
+  --on-hl: #55595b;
+  --link: #8a8e90;
+}
+
+/* M2: about 6 to 1 */
+.theme-lime.ink-m2 {
+  --ink: #606467;
+  --soft: #727679;
+  --on-hl: #55595b;
+  --link: #8a8e90;
+}
+
+/* M3: about 5 to 1, near the accessibility floor */
+.theme-lime.ink-m3 {
+  --ink: #6b6f72;
+  --soft: #6b6f72;
+  --on-hl: #55595b;
+  --link: #8a8e90;
+}
+
+/* J3 with only the second tape color changed */
+.theme-lime.tape-butter {
+  --tape-2: #ffe27a;
+}
+
+.theme-lime.tape-grey {
+  --tape-2: #e1e4e2;
+}
+
+.theme-lime.tape-sky {
+  --tape-2: #a9d4f5;
+}
+
+/* More J3 tape options */
+.theme-lime.tape-kraft {
+  --tape-2: #dcc7a1;
+}
+
+.theme-lime.tape-clear {
+  --tape-2: rgba(226, 233, 230, 0.75);
+}
+
+.theme-lime.tape-clear .card:nth-child(3n + 2)::before {
+  outline: 1px solid rgba(23, 64, 61, 0.15);
+}
+
+.theme-lime.tape-lime {
+  --tape-2: #e4f27a;
+}
+
+.theme-lime.tape-sage {
+  --tape-2: #c5d6b0;
+}
+
+.theme-lime.tape-cobalt {
+  --tape-2: #6b93ef;
+}
+
+/* Blues around O5 cobalt */
+.theme-lime.tape-p1 { --tape-2: #4f7dff; }
+.theme-lime.tape-p2 { --tape-2: #2f5fd9; }
+.theme-lime.tape-p3 { --tape-2: #8aa8f2; }
+.theme-lime.tape-p4 { --tape-2: #3c9be8; }
+.theme-lime.tape-p5 { --tape-2: #5a7fd6; }

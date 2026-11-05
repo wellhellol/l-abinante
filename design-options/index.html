@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site options</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap" />
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem 1.5rem;
+      background: #f2f0ee;
+      color: #1c1b1a;
+      font-family: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    h2 {
+      margin: 0 0 0.25rem;
+      font-size: 1.2rem;
+    }
+
+    p {
+      margin: 0 0 0.75rem;
+      color: #5d5a57;
+      font-size: 0.95rem;
+    }
+
+    .frame {
+      position: relative;
+      height: 60vh;
+      overflow: hidden;
+      border: 2px solid #1c1b1a;
+      background: #ffffff;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1280px;
+      height: calc(60vh / var(--scale, 0.33));
+      border: 0;
+      transform: scale(var(--scale, 0.33));
+      transform-origin: 0 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div>
+      <h2>O5 Cobalt</h2>
+      <p>#6b93ef, for reference. <a href="option-b-lime-cobalt.html">Open full size</a></p>
+      <div class="frame"><iframe src="option-b-lime-cobalt.html" title="O5 Cobalt"></iframe></div>
+    </div>
+    <div>
+      <h2>P1 Electric blue</h2>
+      <p>#4f7dff, brighter and bolder. <a href="option-b-lime-p1.html">Open full size</a></p>
+      <div class="frame"><iframe src="option-b-lime-p1.html" title="P1 Electric blue"></iframe></div>
+    </div>
+    <div>
+      <h2>P2 Deep cobalt</h2>
+      <p>#2f5fd9, richer and darker. <a href="option-b-lime-p2.html">Open full size</a></p>
+      <div class="frame"><iframe src="option-b-lime-p2.html" title="P2 Deep cobalt"></iframe></div>
+    </div>
+    <div>
+      <h2>P3 Cornflower</h2>
+      <p>#8aa8f2, lighter and softer. <a href="option-b-lime-p3.html">Open full size</a></p>
+      <div class="frame"><iframe src="option-b-lime-p3.html" title="P3 Cornflower"></iframe></div>
+    </div>
+    <div>
+      <h2>P4 Cerulean</h2>
+      <p>#3c9be8, a sunnier, greener blue. <a href="option-b-lime-p4.html">Open full size</a></p>
+      <div class="frame"><iframe src="option-b-lime-p4.html" title="P4 Cerulean"></iframe></div>
+    </div>
+    <div>
+      <h2>P5 Dusty cobalt</h2>
+      <p>#5a7fd6, slightly muted. <a href="option-b-lime-p5.html">Open full size</a></p>
+      <div class="frame"><iframe src="option-b-lime-p5.html" title="P5 Dusty cobalt"></iframe></div>
+    </div>
+  </div>
+
+  <script>
+    // Scale each 1280px-wide page down to fit its column.
+    const fit = () => {
+      document.querySelectorAll(".frame").forEach((frame) => {
+        frame.style.setProperty("--scale", frame.clientWidth / 1280)
+      })
+    }
+    window.addEventListener("resize", fit)
+    fit()
+  </script>
+</body>
+</html>

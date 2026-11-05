@@ -1,0 +1,128 @@
+/* D3 Marker: an oversized headline the highlighter draws across on load,
+   a second color (deep green) for actions, and a split two-audience section. */
+
+.option-c {
+  --page: 60rem;
+  --green: #1f5c45;
+}
+
+@media (prefers-color-scheme: dark) {
+  .option-c {
+    --green: #7fc7a5;
+  }
+}
+
+.option-c .hero {
+  padding: 5rem 0 4rem;
+}
+
+.option-c h1 {
+  font-size: clamp(2.5rem, 7.5vw, 5rem);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  max-width: 16ch;
+  margin-bottom: 2.5rem;
+}
+
+/* The one moment of motion: the marker sweeps across the headline */
+.option-c h1 .hl {
+  background: linear-gradient(var(--peach), var(--peach)) no-repeat 0 0 / 100% 100%;
+  animation: marker 1.1s 0.3s ease-out both;
+}
+
+@keyframes marker {
+  from {
+    background-size: 0% 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .option-c h1 .hl {
+    animation: none;
+  }
+}
+
+.option-c .hero-body {
+  max-width: 38rem;
+  margin-left: auto;
+}
+
+.option-c .cta {
+  background: var(--green);
+  color: #ffffff;
+}
+
+.option-c a:not(.cta) {
+  text-decoration-color: var(--green);
+}
+
+.option-c .panels {
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.option-c .panel {
+  padding-right: 2.5rem;
+}
+
+.option-c .panel + .panel {
+  padding: 0 0 0 2.5rem;
+  border-left: 2px solid var(--ink);
+}
+
+.option-c .panel-title {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.option-c .card {
+  border: none;
+  border-left: 6px solid var(--peach);
+  padding: 0.25rem 0 0.25rem 1.25rem;
+}
+
+.option-c .offers .cards {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.option-c .offers .card {
+  border: 2px solid var(--ink);
+  border-top: 10px solid var(--green);
+  padding: 1.25rem 1.5rem;
+}
+
+.option-c .job {
+  border-top: 2px solid var(--ink);
+}
+
+.option-c .job .when {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.option-c .quotes {
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+@media (max-width: 800px) {
+  .option-c .panels,
+  .option-c .offers .cards,
+  .option-c .quotes {
+    grid-template-columns: 1fr;
+  }
+
+  .option-c .panel,
+  .option-c .panel + .panel {
+    padding: 0;
+    border-left: none;
+  }
+
+  .option-c .panel + .panel {
+    margin-top: 3rem;
+  }
+
+  .option-c .hero-body {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,207 @@
+:root {
+  --paper: #ffffff;
+  --ink: #1c1b1a;
+  --soft: #5d5a57;
+  --peach: #ffa27f;
+  --on-peach: #1c1b1a;
+  --font: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1b1a19;
+    --ink: #f3f0ec;
+    --soft: #b4aea8;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: var(--peach);
+  text-decoration-thickness: 0.18em;
+  text-underline-offset: 0.2em;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+/* Highlighter: a flat marker stroke that wraps line by line */
+.hl {
+  background: var(--peach);
+  color: var(--on-peach);
+  padding: 0.04em 0.3em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.top,
+.bottom,
+main {
+  max-width: var(--page, 40rem);
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 2rem;
+  font-size: 1rem;
+}
+
+.top .name {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.bottom {
+  display: flex;
+  gap: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  font-size: 1rem;
+}
+
+section {
+  padding: 3.5rem 0;
+}
+
+section > h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.75rem;
+}
+
+.lede {
+  font-size: 1.25rem;
+}
+
+.facts,
+.when,
+.earlier,
+figcaption {
+  color: var(--soft);
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.8rem 1.4rem;
+  background: var(--ink);
+  color: var(--paper);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background: var(--peach);
+  color: var(--on-peach);
+}
+
+.card {
+  border: 2px solid var(--ink);
+  padding: 1.25rem 1.5rem;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+.cards {
+  display: grid;
+  gap: 1.25rem;
+}
+
+/* Tabs are hidden unless an option turns them on */
+.tabs {
+  display: none;
+}
+
+.panels {
+  display: grid;
+  gap: 3rem;
+}
+
+.jobs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.job {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  gap: 1.25rem;
+  padding: 1.25rem 0;
+}
+
+.job .when {
+  margin: 0;
+  padding-top: 0.1rem;
+}
+
+@media (max-width: 600px) {
+  .top {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .job {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}
+
+.quotes {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+figure {
+  margin: 0;
+}
+
+blockquote {
+  margin: 0 0 0.35rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.35;
+}

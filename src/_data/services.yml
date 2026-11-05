@@ -1,0 +1,29 @@
+- title: For tech teams
+  items:
+    - title: Stripe Billing
+      body: >-
+        Subscriptions, invoices, proration, usage-based pricing, and webhooks. I'm especially good at the "why doesn't Stripe match our database" kind of bug, and at setting up new integrations so revenue reporting works from day one.
+    - title: Integrations that survive bad days
+      body: >-
+        Payments, CRMs, booking systems, and auth providers, built to handle retries, duplicate webhooks, and bad data. I am still petrified of data loss, and I build like it.
+    - title: AI features in Rails
+      body: >-
+        Adding Claude and other model APIs to real product workflows, plus internal tooling that helps engineers and non-technical teams get more done.
+    - title: Senior help on older codebases
+      body: >-
+        Upgrades, legacy refactors, and the code nobody wants to touch. I've spent most of my career inside large, old Rails apps, and I genuinely like them.
+
+- title: For small businesses
+  items:
+    - title: Booking and payments
+      body: >-
+        Online booking and payments that flow into the rest of your tools, so nobody spends their evening copying names between tabs.
+    - title: Getting your tools to talk
+      body: >-
+        Your booking system, email marketing, calendar, and spreadsheets, passing information to each other automatically.
+    - title: Small tools built for you
+      body: >-
+        A little app or automation shaped around how your business actually works, like a Slack assistant that helps your staff run the day.
+    - title: Fixing what broke
+      body: >-
+        Something your last developer built that stopped working? I'll figure out why, fix it, and write down how it works.

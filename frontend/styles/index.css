@@ -1,0 +1,278 @@
+:root {
+  --board: #f4f7f5;
+  --paper: #ffffff;
+  --ink: #17403d;
+  --soft: #4f6e6a;
+  --line: #b8cfcb;
+  --card-edge: #cfdcd9;
+
+  /* Lime highlighter, with lime and cornflower tape */
+  --hl: #e4f27a;
+  --tape-1: #e4f27a;
+  --tape-2: #8aa8f2;
+  --link: #2f8f82;
+
+  --font: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+  --page: 64rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--board);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: var(--link);
+  text-decoration-thickness: 0.18em;
+  text-underline-offset: 0.2em;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.soft {
+  color: var(--soft);
+}
+
+/* Highlighter: a flat marker stroke that wraps line by line */
+.hl {
+  background: var(--hl);
+  color: var(--ink);
+  padding: 0.04em 0.3em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+/* Page frame */
+
+.top,
+.bottom,
+main {
+  max-width: var(--page);
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 2rem;
+  font-size: 1rem;
+}
+
+.top .name {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.bottom {
+  display: flex;
+  gap: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  font-size: 1rem;
+}
+
+section {
+  padding: 3.5rem 0;
+}
+
+section > h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.75rem;
+}
+
+/* Hero */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 3rem;
+  align-items: end;
+  padding-top: 5rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.25rem, 5vw, 3.4rem);
+  line-height: 1.3;
+}
+
+.lede {
+  font-size: 1.25rem;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.8rem 1.4rem;
+  background: var(--ink);
+  color: var(--paper);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background: var(--hl);
+  color: var(--ink);
+}
+
+/* Pinboard cards */
+
+.audiences {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.audience-title {
+  font-size: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.cards {
+  display: grid;
+  gap: 2rem;
+}
+
+.cards-row {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  position: relative;
+  background: var(--paper);
+  border: 1px solid var(--card-edge);
+  padding: 1.75rem 1.5rem 1.25rem;
+  transform: rotate(-0.6deg);
+}
+
+.card:nth-child(even) {
+  transform: rotate(0.7deg);
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+/* A strip of tape holding each card up, alternating lime and cornflower */
+.card::before {
+  content: "";
+  position: absolute;
+  top: -0.7rem;
+  left: 50%;
+  width: 5.5rem;
+  height: 1.3rem;
+  background: var(--tape-1);
+  opacity: 0.85;
+  transform: translateX(-50%) rotate(-3deg);
+}
+
+.card:nth-child(3n + 2)::before {
+  background: var(--tape-2);
+  transform: translateX(-50%) rotate(4deg);
+}
+
+.price {
+  font-weight: 700;
+}
+
+/* Work history */
+
+.jobs {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 3rem;
+}
+
+.job {
+  padding: 1.25rem 0;
+  border-top: 1.5px solid var(--line);
+}
+
+.job .soft {
+  margin-bottom: 0.25rem;
+}
+
+/* How I work */
+
+.approach {
+  max-width: 40rem;
+}
+
+.quotes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+figure {
+  margin: 0;
+}
+
+blockquote {
+  margin: 0 0 0.35rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+@media (max-width: 800px) {
+  .hero,
+  .audiences,
+  .cards-row,
+  .jobs,
+  .quotes {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .top,
+  .bottom,
+  main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .top {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}

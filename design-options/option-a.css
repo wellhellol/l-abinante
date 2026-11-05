@@ -1,0 +1,60 @@
+/* D1 Highlighter: one column, a tilted highlighter on every heading,
+   hard peach shadows under the cards, and an audience switch. */
+
+.option-a h1 {
+  font-size: clamp(2.25rem, 6vw, 3.25rem);
+  line-height: 1.3;
+  margin: 4rem 0 2rem;
+}
+
+.option-a section > h2 {
+  display: inline-block;
+  transform: rotate(-1.5deg);
+}
+
+.option-a .card {
+  box-shadow: 6px 6px 0 var(--peach);
+}
+
+.option-a .offers .card:nth-child(2) {
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+/* Audience switch */
+.option-a .tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.option-a .tabs button {
+  font: inherit;
+  font-weight: 700;
+  padding: 0.6rem 1.1rem;
+  border: 2px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.option-a .tabs button[aria-selected="true"] {
+  background: var(--peach);
+  color: var(--on-peach);
+  border-color: var(--peach);
+}
+
+.option-a .panel-title {
+  display: none;
+}
+
+.option-a[data-audience="teams"] #shops,
+.option-a[data-audience="shops"] #teams {
+  display: none;
+}
+
+.option-a .job {
+  border-left: 4px solid var(--peach);
+  padding-left: 1.25rem;
+  margin-bottom: 0.75rem;
+}

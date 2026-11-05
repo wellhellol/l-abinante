@@ -1,0 +1,132 @@
+/* D2 Pinboard: a wider page where cards sit like index cards
+   taped to a board, both audiences side by side.
+   Colors come from a theme in themes.css. */
+
+.option-b {
+  --page: 64rem;
+  background: var(--board, var(--paper));
+  color: var(--ink);
+}
+
+.option-b .hero {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 3rem;
+  align-items: end;
+  padding-top: 5rem;
+}
+
+.option-b h1 {
+  font-size: clamp(2.25rem, 5vw, 3.4rem);
+  line-height: 1.3;
+}
+
+.option-b .hl {
+  background: var(--hl, var(--peach));
+  color: var(--on-hl, var(--on-peach));
+}
+
+.option-b a {
+  text-decoration-color: var(--link, var(--peach));
+}
+
+.option-b .cta {
+  background: var(--cta-bg, var(--ink));
+  color: var(--cta-ink, var(--paper));
+}
+
+.option-b .cta:hover {
+  background: var(--hl, var(--peach));
+  color: var(--on-hl, var(--on-peach));
+}
+
+.option-b .facts,
+.option-b .when,
+.option-b .earlier,
+.option-b figcaption {
+  color: var(--soft);
+}
+
+.option-b .panels {
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.option-b .panel-title {
+  font-size: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.option-b .cards {
+  gap: 2rem;
+}
+
+.option-b .card {
+  position: relative;
+  background: var(--card-bg, var(--paper));
+  color: var(--card-ink, var(--ink));
+  border: var(--card-border, 1.5px solid var(--ink));
+  padding-top: 1.75rem;
+  transform: rotate(-0.6deg);
+}
+
+.option-b .card:nth-child(even) {
+  transform: rotate(0.7deg);
+}
+
+/* A strip of tape holding each card up, cycling through the theme's tape colors */
+.option-b .card::before {
+  content: "";
+  position: absolute;
+  top: -0.7rem;
+  left: 50%;
+  width: 5.5rem;
+  height: 1.3rem;
+  background: var(--tape-1, var(--peach));
+  opacity: var(--tape-opacity, 0.9);
+  transform: translateX(-50%) rotate(-3deg);
+}
+
+.option-b .card:nth-child(3n + 2)::before {
+  background: var(--tape-2, var(--tape-1, var(--peach)));
+  transform: translateX(-50%) rotate(4deg);
+}
+
+.option-b .card:nth-child(3n)::before {
+  background: var(--tape-3, var(--tape-1, var(--peach)));
+}
+
+.option-b .offers .cards {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.option-b .jobs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 3rem;
+}
+
+.option-b .job {
+  grid-template-columns: 1fr;
+  gap: 0.25rem;
+  border-top: 1.5px solid var(--line, var(--ink));
+}
+
+.option-b .approach > p {
+  max-width: 40rem;
+}
+
+.option-b .quotes {
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+@media (max-width: 800px) {
+  .option-b .hero,
+  .option-b .panels,
+  .option-b .offers .cards,
+  .option-b .jobs,
+  .option-b .quotes {
+    grid-template-columns: 1fr;
+  }
+}

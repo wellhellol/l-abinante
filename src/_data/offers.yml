@@ -1,0 +1,17 @@
+# Set `from` to a starting price (e.g. "$2,000") to show it on the card.
+# Leave it blank to hide the price line.
+
+- title: A small project
+  body: >-
+    One clear job with a finish line, like setting up online booking, connecting two tools, or fixing a broken integration. Quoted up front.
+  from:
+
+- title: A review
+  body: >-
+    I dig into your billing, integrations, or tangle of tools, then write up what's risky, what's fine, and what to fix first. About two weeks, fixed price.
+  from:
+
+- title: Ongoing help
+  body: >-
+    Regular hours every month. I join your Slack, pick up work, review code, and help your team grow.
+  from:

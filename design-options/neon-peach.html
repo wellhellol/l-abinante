@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neon peach</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+      font-size: 1.125rem;
+      color: #232323;
+      background: #ffffff;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+      gap: 2rem;
+      padding: 2.5rem 1.5rem;
+    }
+
+    .dark {
+      background: #161616;
+      color: #f2f2f2;
+    }
+
+    .chip {
+      height: 7rem;
+      background: var(--c);
+    }
+
+    /* On dark, neon reads as light that spills past its edges */
+    .dark .chip {
+      box-shadow: 0 0 1.5rem var(--c), 0 0 4rem color-mix(in srgb, var(--c) 55%, transparent);
+    }
+
+    .sign {
+      margin: 1.25rem 0 0.25rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--c);
+      text-shadow: 0 0 0.4rem var(--c), 0 0 1.4rem var(--c);
+    }
+
+    h2 {
+      margin: 1rem 0 0.4rem;
+      font-size: 1.15rem;
+    }
+
+    .hl {
+      background: var(--c);
+      padding: 0.05em 0.3em;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="row dark">
+    <div style="--c:#ff8c7a">
+      <div class="chip"></div>
+      <p class="sign">H1 #ff8c7a</p>
+    </div>
+    <div style="--c:#ff957a">
+      <div class="chip"></div>
+      <p class="sign">H2 #ff957a</p>
+    </div>
+    <div style="--c:#ffa98f">
+      <div class="chip"></div>
+      <p class="sign">H3 #ffa98f</p>
+    </div>
+    <div style="--c:#ffa585">
+      <div class="chip"></div>
+      <p class="sign">H4 #ffa585</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div style="--c:#ff8c7a">
+      <h2>H1</h2>
+      <p><span class="hl">Stuck on a software problem?</span></p>
+    </div>
+    <div style="--c:#ff957a">
+      <h2>H2</h2>
+      <p><span class="hl">Stuck on a software problem?</span></p>
+    </div>
+    <div style="--c:#ffa98f">
+      <h2>H3</h2>
+      <p><span class="hl">Stuck on a software problem?</span></p>
+    </div>
+    <div style="--c:#ffa585">
+      <h2>H4</h2>
+      <p><span class="hl">Stuck on a software problem?</span></p>
+    </div>
+  </div>
+</body>
+</html>

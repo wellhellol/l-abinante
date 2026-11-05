@@ -1,0 +1,81 @@
+---
+layout: default
+---
+<% meta = site.metadata %>
+<% work = site.data.work %>
+
+<section class="hero">
+  <h1><span class="hl"><%= meta.headline %></span></h1>
+  <div>
+    <p class="lede"><%= meta.lede %></p>
+    <p class="soft"><%= meta.facts %></p>
+    <a class="cta" href="mailto:<%= meta.email %>"><%= meta.cta %></a>
+  </div>
+</section>
+
+<section>
+  <h2><span class="hl">How I can help</span></h2>
+  <div class="audiences">
+    <% site.data.services.each do |audience| %>
+      <div>
+        <h3 class="audience-title"><span class="hl"><%= audience.title %></span></h3>
+        <div class="cards">
+          <% audience.items.each do |service| %>
+            <article class="card">
+              <h4><%= service.title %></h4>
+              <p><%= service.body %></p>
+            </article>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>
+
+<section>
+  <h2><span class="hl">Ways to work together</span></h2>
+  <div class="cards cards-row">
+    <% site.data.offers.each do |offer| %>
+      <article class="card">
+        <h4><%= offer.title %></h4>
+        <p><%= offer.body %></p>
+        <% if offer.from %>
+          <p class="price">From <%= offer.from %></p>
+        <% end %>
+      </article>
+    <% end %>
+  </div>
+</section>
+
+<section>
+  <h2><span class="hl">Where I've worked</span></h2>
+  <ol class="jobs">
+    <% work.selected.each do |job| %>
+      <li class="job">
+        <p class="soft"><%= job.years %></p>
+        <h4><%= job.company %></h4>
+        <p><%= job.body %></p>
+      </li>
+    <% end %>
+  </ol>
+  <p class="soft"><%= work.earlier %></p>
+</section>
+
+<section>
+  <h2><span class="hl">How I work</span></h2>
+  <p class="approach"><%= work.approach %></p>
+  <div class="quotes">
+    <% work.quotes.each do |quote| %>
+      <figure>
+        <blockquote>"<%= quote.text %>"</blockquote>
+        <figcaption class="soft"><%= quote.who %></figcaption>
+      </figure>
+    <% end %>
+  </div>
+</section>
+
+<section>
+  <h2><span class="hl">Say hello</span></h2>
+  <p><%= work.contact %></p>
+  <a class="cta" href="mailto:<%= meta.email %>"><%= meta.cta %></a>
+</section>

@@ -1,0 +1,40 @@
+selected:
+  - company: Ebb & Ember Floating Saunas
+    years: 2026 to now
+    body: >-
+      Built and run the customer platform for a Portland wellness business. Bookings and purchases flow straight into their email marketing, with a Slack assistant and Google Workspace automation on top.
+
+  - company: Recast
+    years: 2024 to 2026
+    body: >-
+      Built and owned integrations with Stripe, Airtable, and AWS Cognito, plus AI features and an internal Claude plugin marketplace.
+
+  - company: YearOne
+    years: 2023 to 2024
+    body: >-
+      Founding backend engineer at an engineering-metrics startup. Built the integrations that pulled in data from enterprise APIs, and the Ruby libraries behind them.
+
+  - company: Stripe
+    years: 2020 to 2022
+    body: >-
+      Built and hardened the public APIs businesses use for invoices and subscriptions. Helped launch a new product line in under 18 months while the team grew from 8 to 80 engineers.
+
+  - company: GitHub
+    years: 2017 to 2019
+    body: >-
+      Technical lead for GitHub Projects. Owned Issues, Milestones, Labels, and Assignees, and built REST and GraphQL APIs.
+
+earlier: >-
+  Before that: New Relic, HashiCorp, Instructure, and a stint as Ruby Together's Empress of Documentation.
+
+approach: >-
+  I've spent a decade mentoring engineers and designing onboarding, including rebuilding Stripe's code review training. I get comfortable with a new team quickly, I explain things in plain language, and I leave things better documented than I found them.
+
+quotes:
+  - text: A true culture carrier on the team.
+    who: Jamie Kite, my manager at GitHub and Stripe
+  - text: A force of nature in the best kind of way.
+    who: A former colleague
+
+contact: >-
+  Tell me what's broken, what's slow, or what you wish your software did. I'll reply within a couple of days.
